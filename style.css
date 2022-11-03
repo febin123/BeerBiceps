@@ -155,3 +155,83 @@ cursor: pointer;
 }
 /*End of Navbar*/
 
+/*start of media query*/
+/* media queries  */
+
+@media(max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+  .search-icon{
+    display: block;
+  }
+  form{
+    display: none;
+    margin: 0 20px;
+
+  }
+  .navbar .search-mob{
+    display: block;
+  }
+
+}
+
+@media(max-width:768px){
+
+  #menu-bar{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top:100%; left: 0; right:0;
+    background: #f7f7f7;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a{
+    margin: 1.5rem;
+    padding:1.5rem;
+    display: block;
+    border:.2rem solid rgba(0,0,0,.1);
+    border-left:.5rem solid var(--red);
+    background:#fff;
+  }
+  .navbar .search-mob{
+    display: block;
+  }
+
+}
+
+@media(max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+.search-icon{
+  margin: 0 10px;
+}
+.navbar .search-mob{
+  display: block;
+
+}
+.navbar .search-mob button{
+  cursor: pointer;
+}
+
+}
+/*end of media query*/
