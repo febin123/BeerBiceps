@@ -47,7 +47,7 @@ section{
 
 .btn{
   display: inline-block;
-  padding:.8rem 3rem;
+  padding:.8rem 4rem;
   border:.2rem solid var(--red);
   color:var(--red);
   cursor: pointer;
