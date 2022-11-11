@@ -25,13 +25,16 @@ window.onscroll = () =>{
 /* end of logic*/
 /*start ofsearch bar */
 let filterInput=document.getElementById("search-data");
-filterInput.addEventListener('click',filterName)
+let filterInputM=document.querySelector('.navbar #search-data');
 
+filterInput.addEventListener('click',filterName)
+filterInputM.addEventListener('click',filterName)
 function filterName(){
   const cl=document.getElementById("sales");
   cl.scrollIntoView({behavior:"smooth"})
 }
 filterInput.addEventListener('keyup',filterNames)
+filterInputM.addEventListener('keyup',filterNames)
 
 function filterNames(){
   const searchbox=document.getElementById("search-data").value.toUpperCase();
