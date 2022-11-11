@@ -56,3 +56,26 @@ function filterNames(){
 
 }
 /*end of search bar */
+
+$(document).ready(()=>{
+  $.getJSON('product.json', (data)=>{
+      data.forEach((course)=>{
+          var courseEl = '<div class="box">'+
+          '<span class="price">'+ course.sale + '</span>'+
+              '<img src="' + course.img + '">'+
+              '<h3>' + course.name + '</h3>'+
+              '   <div class="stars">'+
+              '<i class="' + course.rating1    + '"></i>'+
+              '<i class="' + course.rating2    + '"></i>'+
+              '<i class="' + course.rating3    + '"></i>'+
+              '<i class="' + course.rating4    + '"></i>'+
+              '<i class="' + course.rating5 + '"></i>'+
+              
+          '</div>'+
+               '<a href="productDetails.html?id='+course.id+'" class="btn">'+course.view+ '</a>'+
+               '<a href="register.html" class="btn">'+course.buy+ '</a>'
+          '</div>';
+          $('.box-container').append(courseEl);
+      });
+  });
+});
