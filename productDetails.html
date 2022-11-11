@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>BeerBiceps - Product Details</title>
+    <link rel="stylesheet" href="styles/product.css">
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!---jquery cdn link-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<!----start of sales section-->
+<div class="small-container single-product">
+    <div class="row">
+        
+    
+    </div>
+
+        </div>
+
+
+<!----end of sales section-->
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(()=>{
+        var search = document.location.search;
+        $.getJSON('./product.json', (data)=>{
+            data.forEach((course)=>{
+                if(search.indexOf(course.id) != -1){
+            
+            var courseEl = '<div class="col-2">'+
+                '<img src="' + course.img + '" id="ProductImg" width="100%">'+
+                '<div class="small-img-row">'+
+                 '<video width="100%" autoplay>'+
+                    '<source src="/Videos/proteinBar.mp4" type="video/mp4">'+
+                    '</video>'+
+                     '</div>'+
+                    '</div>'+
+                    '<div class="col-2">'+
+                        '<p> <a href="index.html">Home/Sale</a> </p>'+
+                        '<h1>'+ course.name + '</h1>'+
+                        '<h4>'+ course.price + '</h4>'+
+                        '   <div class="stars">'+
+                            '<i class="' + course.rating1    + '"></i>'+
+                                '<i class="' + course.rating2    + '"></i>'+
+                                '<i class="' + course.rating3    + '"></i>'+
+                                '<i class="' + course.rating4    + '"></i>'+
+                                '<i class="' + course.rating5 + '"></i>'+
+                            '</div>'+
+                        '<input type="number" value="1" min="1" max="10">'+
+                        '<a href="register.html" class="btn">' + course.buy + '</a>'+
+                        '<h3>Product Details </h3>'+
+                        '<br>'+
+                        '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id maxime ipsa iusto? Consectetur natus earum iste consequuntur sed accusantium minus, aut fugit quae nisi omnis iure pariatur exercitationem laborum! Eveniet vel nemo nobis aperiam veritatis ratione ducimus, qui minima tempore iusto tenetur saepe, hic facere consectetur dolorum praesentium aspernatur quis.</p>'+
+                        '</div>'
+
+            
+                
+                
+            '</div>'
+
+
+
+
+
+      
+        
+            $('.row').append(courseEl);
+    
+                }
+            });
+        });
+
+    })
+</script>
+
+<!---linked js file-->
+<!-- <script src="app.js"></script> -->
+</body>
+</html>
