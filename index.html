@@ -10,6 +10,9 @@
 
     <!---style.css linked-->
     <link rel="stylesheet" href="style.css">
+
+       <!---jquery cdn link-->
+       <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!----start of Navbar-->
@@ -20,9 +23,8 @@
         <div id="menu-bar" class="fas fa-bars"></div>
      
         <nav class="navbar">
-            <a href="#">home</a>
-            <a href="#">Sales</a>
-            <a href="#">Best Seller</a>
+            <a href="#home">home</a>
+            <a href="#sales">Sales</a>
             <a href="#" class="search-mob"> <input type="search" class="search-data" placeholder="Search" required>
                 <button type="submit" class="fas fa-search"></button></a>
         </nav>
@@ -36,6 +38,8 @@
     <!----End of Navbar-->
 
     <!---Start of home section--->
+
+    <section class="home" id="home">
     <div class="content">
         <h3>Lorem ipsum dolor sit.</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>

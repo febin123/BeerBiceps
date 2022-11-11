@@ -162,7 +162,6 @@ cursor: pointer;
   gap:1.5rem;
   min-height: 100vh;
   align-items: center;
-
   background-size: cover;
   background-position: center;
 }
@@ -203,6 +202,62 @@ cursor: pointer;
 }
 
 /*end of home section*/
+
+/*start of sales section*/
+#sales .box-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  gap:1.5rem;
+  width: 100%;
+  height: auto;
+}
+
+#sales .box-container .box{
+  width: 33%;
+  box-sizing: border-box;
+  padding:2rem;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.3);
+  border-radius: 1rem;
+  text-align: center;
+  flex:0 0 30rem;
+  
+}
+
+#sales .box-container .box img{
+  height:25rem;
+  object-fit: cover;
+  width:100%;
+  border-radius: .5rem;
+}
+
+#sales .box-container .box .price{
+  position: absolute;
+  /* top:3rem; left:3rem; */
+  background:var(--red);
+  color:#fff;
+  font-size: 2rem;
+  padding:.5rem 1rem;
+  border-radius: .5rem;
+}
+
+#sales .box-container .box h3{
+  color:#333;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+#sales .box-container .box .stars i{
+  color:gold;
+  font-size: 1.7rem;
+  padding:1rem .1rem;
+}
+
+
+/*end of sales section*/
+
 
 /*start of media query*/
 /* media queries  */
