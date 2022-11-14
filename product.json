@@ -12,7 +12,8 @@
         "rating2":"fa fa-star",                    
         "rating3":"fa fa-star",                    
         "rating4":"fa fa-star",                    
-        "rating5":"fa-solid fa-star-half-stroke"                    
+        "rating5":"fa-solid fa-star-half-stroke",
+        "des":"Made from multivitamin seeds and chocolate. A great supplement for the body. Healthy and tasty. You are definitely not you when you are hungry!"                    
         
     },
     {
@@ -27,7 +28,8 @@
         "rating2":"fa fa-star",                    
         "rating3":"fa fa-star",                    
         "rating4":"fa fa-star",                    
-        "rating5":"" 
+        "rating5":"",
+        "des":"Protein bar. Made from multivitamin seeds and sweet oranges. Healthy, tasty and tangy!" 
         
     },
     {
@@ -42,7 +44,8 @@
         "rating2":"fa fa-star",                    
         "rating3":"fa fa-star",                    
         "rating4":"fa fa-star",                    
-        "rating5":"fa fa-star" 
+        "rating5":"fa fa-star",
+        "des":"Made from a mix of natural and nature identical items for enhanced effects, nutritional rich and healthy for the body." 
         
     },
     {
@@ -57,7 +60,8 @@
         "rating2":"fa fa-star",                    
         "rating3":"fa fa-star",                    
         "rating4":"fa fa-star",                    
-        "rating5":"fa-solid fa-star-half-stroke" 
+        "rating5":"fa-solid fa-star-half-stroke",
+        "des":"Professional, sturdy, easy to carry and heavy enough to give the perfect skipping flow when jumping. Not built to be tied to weights. Available in multiple colors." 
       
     },
     {
@@ -65,14 +69,16 @@
         "sale":"-25%",
         "price":"€10",
         "img":"Images/popular2.png",
-        "name":"Back Gripper",
+        "name":"Gripper",
         "buy":"Buy-Now",
         "view":"View",
         "rating1":"fa fa-star",                    
         "rating2":"fa fa-star",                    
         "rating3":"fa fa-star",                    
         "rating4":"fa fa-star",                    
-        "rating5":"fa fa-star" 
+        "rating5":"fa fa-star",
+        "vid":"https://player.vimeo.com/video/761273552?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1",
+        "des":"Great grip and strong design for exercises like toning and other pulling related exercises. Made from elastic and nylon. Built for rigorous training. Sweat resistant." 
     },
     {
         "id":"6",
@@ -86,7 +92,8 @@
         "rating2":"fa fa-star",                    
         "rating3":"fa fa-star",                    
         "rating4":"fa fa-star",                    
-        "rating5":"fa-solid fa-star-half-stroke" 
+        "rating5":"fa-solid fa-star-half-stroke",
+        "des":"Yoga mat or sticky mats. Made from the best materials to avoid slipping when doing asanas and meditating. Available in other colors." 
     }
 
 ]
