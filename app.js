@@ -25,7 +25,7 @@ window.onscroll = () =>{
 /* end of logic*/
 /*start ofsearch bar */
 let filterInput=document.getElementById("search-data");
-let filterInputM=document.querySelector('.navbar #search-data');
+let filterInputM=document.querySelector('.navbar #search-dat');
 
 filterInput.addEventListener('click',filterName)
 filterInputM.addEventListener('click',filterName)
