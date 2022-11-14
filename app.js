@@ -76,7 +76,7 @@ $(document).ready(()=>{
               
           '</div>'+
                '<a href="productDetails.html?id='+course.id+'" class="btn">'+course.view+ '</a>'+
-               '<a href="register.html" class="btn">'+course.buy+ '</a>'
+               '<a href="register.html" target="_blank" class="btn">'+course.buy+ '</a>'
           '</div>';
           $('.box-container').append(courseEl);
       });
